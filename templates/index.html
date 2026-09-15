@@ -1,0 +1,126 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Iris Flower Classifier</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1>Iris Flower Classifier</h1>
+
+            <p class="subtitle">
+                Enter the flower measurements to predict its species.
+            </p>
+
+
+            <form action="/predict" method="POST">
+
+                <div class="input-group">
+
+                    <label for="sepal_length">
+                        Sepal Length (cm)
+                    </label>
+
+                    <input
+                        type="number"
+                        step="0.1"
+                        name="sepal_length"
+                        id="sepal_length"
+                        placeholder="Example: 5.1"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="sepal_width">
+                        Sepal Width (cm)
+                    </label>
+
+                    <input
+                        type="number"
+                        step="0.1"
+                        name="sepal_width"
+                        id="sepal_width"
+                        placeholder="Example: 3.5"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="petal_length">
+                        Petal Length (cm)
+                    </label>
+
+                    <input
+                        type="number"
+                        step="0.1"
+                        name="petal_length"
+                        id="petal_length"
+                        placeholder="Example: 1.4"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="petal_width">
+                        Petal Width (cm)
+                    </label>
+
+                    <input
+                        type="number"
+                        step="0.1"
+                        name="petal_width"
+                        id="petal_width"
+                        placeholder="Example: 0.2"
+                        required
+                    >
+
+                </div>
+
+
+                <button type="submit">
+                    Predict Species
+                </button>
+
+            </form>
+
+
+            {% if prediction %}
+
+            <div class="result">
+
+                <h2>Prediction</h2>
+
+                <p>{{ prediction }}</p>
+
+            </div>
+
+            {% endif %}
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
