@@ -191,7 +191,9 @@ Development Tools
 VS Code
 Git
 GitHub
+
 📁 Project Structure
+
 Iris-Flower-Classification/
 │
 ├── Iris_dataset.csv
@@ -219,6 +221,7 @@ Iris-Flower-Classification/
 
 venv/ is excluded from version control using .gitignore.
 
+
 💻 Installation & Setup
 
 1. Clone the Repository
@@ -236,9 +239,12 @@ venv\Scripts\Activate.ps1
 Windows CMD:
 
 venv\Scripts\activate
+
 5. Install Dependencies
 pip install -r requirements.txt
+
 ▶️ Running the Project
+
 Run Machine Learning Prediction
 python predict.py
 
@@ -265,7 +271,9 @@ Petal Width: 0.2
 Prediction:
 
 Iris-setosa
+
 📌 Key Highlights
+
 Complete end-to-end Machine Learning workflow
 Exploratory Data Analysis
 Data preprocessing and feature scaling
@@ -274,6 +282,7 @@ Comparison of 5 classification algorithms
 Model serialization using Joblib
 Flask-based real-time prediction system
 Git and GitHub version control
+
 🔮 Future Improvements
 
 Possible future enhancements include:
@@ -285,19 +294,12 @@ Improve UI/UX
 Add input validation and error handling
 Add REST API support
 Containerize the application using Docker
+
 👨‍💻 Author
 
 Pranoy Chandra Das
 
 Software Engineering | Data Science | Machine Learning
-
-GitHub
-
-https://github.com/PranoyChandraDas107
-
-Project Repository
-
-https://github.com/PranoyChandraDas107/Iris-Flower-Classification
 
 📄 License
 
